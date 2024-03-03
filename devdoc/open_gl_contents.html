@@ -1,0 +1,471 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML dir=ltr>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>OpenGL 1 Reference Library</TITLE>
+<style type="text/css">
+@import url(backsdk4.css);
+@import url(backsdk5.css);
+</style>
+</HEAD>
+<BODY BGCOLOR = #FFFFFF TEXT = #000000>
+
+<h1>OpenGL 1.0 Reference Library</h1>
+<h2>Table Of Contents</h2>
+
+<!-- START CONTENTS -->
+<li class="toc-l0"><a class="external reference" href="good/#_ogl_">OpenGL Contents</a></li>
+	<li class="toc-l1">	<a class="external reference" href="good/pdgrmm/legalgl_62pa.htm">Legal Information</a></li>
+    
+<!-- OVERVIEW -->
+<li class="toc-l1">	<a class="external reference" href="">Overview</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/int01_2v58.htm">Introduction to OpenGL</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/int01_1ur7.htm">Primitives and Commands</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/int01_3jxo.htm">OpenGL Graphic Control</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/int01_3qcs.htm">Execution Model</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/int01_02su.htm">Basic OpenGL Operation</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/over02_5zl1.htm">OpenGL Processing Pipeline</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_599v.htm">OpenGL Function Names</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_30dv.htm">Vertices</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_0q1t.htm">Input Data</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_8703.htm">Matrix Transformations</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_8ep3.htm">Setting Lighting and Coloring</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_1qur.htm">Generating Texture Coordinates</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_0b3n.htm">Assembling Primitives</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_3pnp.htm">Vertices Reference</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_8coj.htm">Primitives</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_2zc7.htm">Clipping</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_141f.htm">Transforming to Window Coordinates</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_1r6v.htm">Rasterizing</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_48md.htm">Primitives Reference</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_5do3.htm">Fragments</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_40tw.htm">Pixel Ownership Test</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_4jsk.htm">Scissor Test</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_8blg.htm">Alpha Test</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_17p0.htm">Stencil Test</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_5ws4.htm">Depth-buffer Test</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_04mf.htm">Blending</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_0cx3.htm">Dithering</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_89yr.htm">Logical Operations</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_3jtx.htm">Fragments Reference</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_6qk3.htm">Pixels</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_2z8z.htm">Frame Buffer Operations</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_235f.htm">Reading or Copying Pixels</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/over02_0gpx.htm">Pixels Reference</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/over02_3coj.htm">Using Evaluators</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_9grp.htm">Evaluators Reference</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/over02_7x9n.htm">Performing Selection and Feedback</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_3oz2.htm">Selection</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_4u23.htm">Feedback</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_6dut.htm">Selection and Feedback Reference</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/over02_4r1v.htm">Using Display Lists</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_04h1.htm">Display Lists Reference</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/over02_31ny.htm">Managing Modes and Execution</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_9h9h.htm">Modes and Execution Reference</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/over02_89pq.htm">Obtaining State Information</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_8ghf.htm">Using the Query Functions</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_8cbr.htm">Error Handling</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_82pf.htm">OpenGL Error Codes</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_6uur.htm">Saving and Restoring Sets of State Variables</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_7goj.htm">OpenGL State Variables</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_39k5.htm">State Information Reference</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/over02_00hl.htm">OpenGL Utility Library</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_85t3.htm">Initializing</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_65ev.htm">Manipulating Images for Use in Texturing</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_92nn.htm">Transforming Coordinates</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_6l83.htm">Tessellating Polygons</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_4d0z.htm">Using Callback Functions</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_8tf7.htm">Using Tessellation Objects</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_8b77.htm">Specifying Callbacks</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_28x0.htm">Specifying the Polygon to Be Tessellated</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_4zeb.htm">Rendering Simple Surfaces</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_3x6b.htm">Using NURBS Curves and Surfaces</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/over02_2eb7.htm">Handling Errors</a></li>
+
+<!-- WIN32 EXTENSIONS TO OPENGL -->
+<li class="toc-l1">	<a class="external reference" href="">Win32 Extensions to OpenGL</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/ntopnglo_3ab9.htm">OpenGL on Windows NT and Windows 95</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglo_3hpv.htm">Components</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglo_62ur.htm">Generic Implementation and Hardware Implementations</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglo_7ysz.htm">Limitations</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglo_1bqm.htm">Guide To Documentation</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglo_4kfn.htm">Rendering Contexts</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_4eb7.htm">Rendering Context Functions</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglo_39ir.htm">Pixel Formats</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_47eb.htm">Pixel Format Functions</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglo_6xkj.htm">Front, Back and Other Buffers</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_04c3.htm">Buffer Functions</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglo_6ph0.htm">Fonts and Text</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_57ub.htm">Font and Text Functions</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglo_1j78.htm">OpenGL Color Modes and Windows Palette Management</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_19gy.htm">Palettes and the Palette Manager</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_06nn.htm">Palette Awareness</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_9sc2.htm">Reading Color Values from the Frame Buffer</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_70f9.htm">Choosing Between RGBA and Color-Index Mode</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_5gqc.htm">RGBA Mode and Windows Palette Management</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_0510.htm">Color-Index Mode and Windows Palette Management</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglo_5a5v.htm">Overlay, Underlay and Main Planes</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglo_0ktv.htm">Sharing Display Lists</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglo_30tv.htm">Extending OpenGL Functions</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglo_4v3m.htm">GLX and WGL/Win32</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglo_965x.htm">Using OpenGL on Windows NT and Windows 95</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_53qr.htm">Header Files</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_550z.htm">Pixel Format Tasks</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/ntopnglo_37p0.htm">Choosing and Setting a Best-Match Pixel Format</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/ntopnglo_6lys.htm">Examining a Device Context's Current Pixel Format</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/ntopnglo_9blf.htm">Examining a Device's Supported Pixel Formats</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_95pv.htm">Rendering Context Tasks</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/ntopnglo_4ygk.htm">Creating a Rendering Context and Making It Current</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/ntopnglo_4c50.htm">Making a Rendering Context Not Current</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/ntopnglo_2ik4.htm">Deleting a Rendering Context</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_43n7.htm">Drawing with Double Buffers</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_1h6f.htm">Drawing Text in a Double-Buffered OpenGL Window</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_7rtx.htm">Printing an OpenGL Image</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_56g4.htm">Copying an OpenGL Image to the Clipboard</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_9zjn.htm">Multithread OpenGL Drawing Strategies</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_1ugp.htm">Using the Auxiliary Library</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglo_8rak.htm">Reference for Win 32 Extensions to OpenGL</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_4e7n.htm">WGL Functions</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_74ab.htm">Win32 Functions</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/ntopnglo_4c37.htm">Structures</a></li>
+
+<!-- WGL AND WIN32 FUNCTIONS AND STRUCTURES -->
+<li class="toc-l2">	<a class="external reference" href="">WGL and Win32 Functions and Structures</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_2qb8.htm">ChoosePixelFormat</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_9ygk.htm">DescribePixelFormat</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_1kc4.htm">GetEnhMetaFilePixelFormat</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_99kk.htm">GetPixelFormat</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_3q5w.htm">SetPixelFormat</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_1ss3.htm">SwapBuffers</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_1awk.htm">wglCreateContext</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_27ec.htm">wglCreateLayerContext</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_56no.htm">wglCopyContext</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_0g6s.htm">wglDeleteContext</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_5vxh.htm">wglDescribeLayerPlane</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_667o.htm">wglGetCurrentContext</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_7psz.htm">wglGetCurrentDC</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_3ws3.htm">wglGetLayerPaletteEntries</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_6yer.htm">wglGetProcAddress</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_2u0k.htm">wglMakeCurrent</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_9z6t.htm">wglRealizeLayerPalette</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_801f.htm">wglSetLayerPaletteEntries</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_6flf.htm">wglShareLists</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_260j.htm">wglSwapLayerBuffers</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_2r8z.htm">wglUseFontBitmaps</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_6kdv.htm">wglUseFontOutlines</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_6i44.htm">GLYPHMETRICSFLOAT</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_29bm.htm">LAYERPLANEDESCRIPTOR</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_73jm.htm">PIXELFORMATDESCRIPTOR</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/ntopnglr_5hdg.htm">POINTFLOAT</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/apptips_9soj.htm">Programming Tips</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/apptips_7wqb.htm">OpenGL Correctness Tips</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/apptips_1d9v.htm">OpenGL Performance Tips</a></li>
+
+<!-- REFERENCE -->
+<li class="toc-l1">	<a class="external reference" href="">Reference</a></li>
+<li class="toc-l2">	<a class="external reference" href="">State Variables</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/apxb4_3rar.htm">Attribute Groups</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/stavar01_34o1.htm">State Variables for Current Values and Associated Data</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/stavar01_2soj.htm">Transformation State Variables</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/stavar01_7e0j.htm">Coloring State Variables</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/stavar01_8cs3.htm">Lighting State Variables</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/stavar01_83zn.htm">Rasterization State Variables</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/stavar01_2vn7.htm">Texturing State Variables</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/stavar01_5fxv.htm">Pixel Operations</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/stavar01_5rqr.htm">Framebuffer Control State Variables</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/stavar01_99kj.htm">Pixel State Variables</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/stavar01_256b.htm">Evaluator State Variables</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/stavar01_4ur7.htm">Hint State Variables</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/stavar01_3nhv.htm">Implementation-Dependent State Variables</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/stavar01_6l9v.htm">Implementation-Dependent Pixel-Depth State Variables</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/stavar01_9nzn.htm">Miscellaneous State Variables</a></li>
+
+<!-- OPENGL FUNCTIONS -->
+<li class="toc-l2">	<a class="external reference" href="">OpenGL Functions</a></li>
+<li class="toc-l3">	<a class="external reference" href="">GL Functions</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_8o4t.htm">glAccum</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_16zy.htm">glAddSwapHintRectWIN</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_5qhv.htm">glAlphaFunc</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_5o1g.htm">glAreTexturesResident</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_2q5w.htm">glArrayElement</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_9u3y.htm">glBegin,  glEnd</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_3bad.htm">glBindTexture</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_1a5s.htm">glBitmap</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_4vs3.htm">glBlendFunc</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_6uk4.htm">glCallList</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_8bub.htm">glCallLists</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_8koi.htm">glClear</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_3dbh.htm">glClearAccum</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_0rhu.htm">glClearColor</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_4j1k.htm">glClearDepth</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_1zqw.htm">glClearIndex</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_4j3g.htm">glClearStencil</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_9g11.htm">glClipPlane</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_62b6.htm">glColor</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_1fsb.htm">glColorMask</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_58vg.htm">glColorMaterial</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_456a.htm">glColorPointer</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_83n8.htm">glColorTableEXT</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_425w.htm">glColorSubTableEXT</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_36ur.htm">glCopyPixels</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_6gtg.htm">glCopyTexImage1D</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_6gv8.htm">glCopyTexImage2D</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_7go4.htm">glCopyTexSubImage1D</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_7gpw.htm">glCopyTexSubImage2D</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_9yxx.htm">glCullFace</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_5iwj.htm">glDeleteLists</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_6vqr.htm">glDeleteTextures</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_5kkj.htm">glDepthFunc</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_35ij.htm">glDepthMask</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_9bxh.htm">glDepthRange</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_8oqb.htm">glDrawArrays</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_4gxe.htm">glDrawBuffer</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_1kz7.htm">glDrawElements</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_6lbn.htm">glDrawPixels</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_75lz.htm">glEdgeFlag</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_61pu.htm">glEdgeFlagPointer</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_3l5x.htm">glEnable,  glDisable</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_72at.htm">glEnableClientState,  glDisableClientState</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc01_7hb8.htm">glEvalCoord</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_2rvs.htm">glEvalMesh</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_1o50.htm">glEvalPoint</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_3m42.htm">glFeedbackBuffer</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_3aqw.htm">glFinish</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_8sa0.htm">glFlush</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_5rmv.htm">glFog</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_49t1.htm">glFrontFace</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_0oj1.htm">glFrustum</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_75o3.htm">glGenLists</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_3p6b.htm">glGenTextures</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_5ub8.htm">glGetBooleanv,  glGetDoublev,  glGetFloatv,  glGetIntegerv</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_8ndx.htm">glGetClipPlane</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_0584.htm">glGetColorTableEXT</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_9svo.htm">glGetColorTableParameterfvEXT,  glGetColorTableParameterivEXT</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_4jzm.htm">glGetError</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_0644.htm">glGetLight</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_2z3k.htm">glGetMap</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_8wj0.htm">glGetMaterial</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_76i8.htm">glGetPixelMap</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_8uwm.htm">glGetPointerv</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_2mw5.htm">glGetPolygonStipple</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_6dwn.htm">glGetString</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_9unq.htm">glGetTexEnv</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_00j2.htm">glGetTexGen</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_3d45.htm">glGetTexImage</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_9df6.htm">glGetTexLevelParameter</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc02_5cqa.htm">glGetTexParameter</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_9uno.htm">glHint</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_7ak8.htm">glIndex</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_5ajv.htm">glIndexMask</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_36lu.htm">glIndexPointer</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_7k4z.htm">glInitNames</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_1wvn.htm">glInterleavedArrays</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_7pgk.htm">glIsEnabled</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_01is.htm">glIsList</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_7cv9.htm">glIsTexture</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_88z8.htm">glLight</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_3y5o.htm">glLightModel</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_7sdh.htm">glLineStipple</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_75k8.htm">glLineWidth</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_1icl.htm">glListBase</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_6h2x.htm">glLoadIdentity</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_3260.htm">glLoadMatrix</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_4fxh.htm">glLoadName</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_7wkw.htm">glLogicOp</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_78s1.htm">glMap1</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_78s2.htm">glMap2</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_509w.htm">glMapGrid</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_7cq4.htm">glMaterial</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_4vs5.htm">glMatrixMode</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_0xmg.htm">glMultMatrix</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_2eyc.htm">glNewList,  glEndList</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_5ru4.htm">glNormal</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_1tiq.htm">glNormalPointer</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_8qnj.htm">glOrtho</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_5zmw.htm">glPassThrough</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_5mpc.htm">glPixelMap</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_7kdh.htm">glPixelStore</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_881e.htm">glPixelTransfer</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_4mul.htm">glPixelZoom</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_5m91.htm">glPointSize</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_9zol.htm">glPolygonMode</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_1tr9.htm">glPolygonStipple</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_748j.htm">glPrioritizeTextures</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_68iq.htm">glPushAttrib,  glPopAttrib</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_3leq.htm">glPushClientAttrib,  glPopClientAttrib</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_246w.htm">glPushMatrix,  glPopMatrix</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_72ud.htm">glPushName,  glPopName</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_0tgz.htm">glRasterPos</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_6hte.htm">glReadBuffer</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_8m7n.htm">glReadPixels</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_5o6s.htm">glRect</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_2aqt.htm">glRenderMode</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_21d1.htm">glRotate</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_1691.htm">glScale</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_4nxu.htm">glScissor</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_2aeq.htm">glSelectBuffer</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_24rw.htm">glShadeModel</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_9t9f.htm">glStencilFunc</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_7e7f.htm">glStencilMask</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_5tm8.htm">glStencilOp</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_6qck.htm">glTexCoord</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_64z6.htm">glTexCoordPointer</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_6xyu.htm">glTexEnv</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_73u6.htm">glTexGen</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_16hw.htm">glTexImage1D</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_16jo.htm">glTexImage2D</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_9upe.htm">glTexParameter</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_2bok.htm">glTexSubImage1D</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_2bqc.htm">glTexSubImage2D</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_9a05.htm">glTranslate</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_2kag.htm">glVertex</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_5ak2.htm">glVertexPointer</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glfunc03_5ur8.htm">glViewport</a></li>
+
+<!-- GL UTILITY FUNCTIONS -->
+<li class="toc-l3">	<a class="external reference" href="">GLU Functions</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_2m3p.htm">gluBeginCurve,  gluEndCurve</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_1qni.htm">gluBeginPolygon,  gluEndPolygon</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_6q05.htm">gluBeginSurface,  gluEndSurface</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_54j1.htm">gluBeginTrim,  gluEndTrim</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_22cz.htm">gluBuild1DMipmaps</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_406r.htm">gluBuild2DMipmaps</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_1036.htm">gluCylinder</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_3pde.htm">gluDeleteNurbsRenderer</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_24v7.htm">gluDeleteQuadric</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_0tdf.htm">gluDeleteTess</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_6ox7.htm">gluDisk</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_8von.htm">gluErrorString</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_21h5.htm">gluGetNurbsProperty</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_9x0n.htm">gluGetString</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_8aux.htm">gluGetTessProperty</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_26gj.htm">gluLoadSamplingMatrices</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_8wtw.htm">gluLookAt</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_8jle.htm">gluNewNurbsRenderer</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_3n37.htm">gluNewQuadric</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_1nlf.htm">gluNewTess</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_5nzm.htm">gluNextContour</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_0iwb.htm">gluNurbsCallback</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_79ph.htm">gluNurbsCurve</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_8nw9.htm">gluNurbsProperty</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_6ftx.htm">gluNurbsSurface</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_5alg.htm">gluOrtho2D</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_2hwr.htm">gluPartialDisk</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_6m79.htm">gluPerspective</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_2gqg.htm">gluPickMatrix</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_4mno.htm">gluProject</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_2ov9.htm">gluPwlCurve</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_7d7v.htm">gluQuadricCallback</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_6w2t.htm">gluQuadricDrawStyle</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_3zar.htm">gluQuadricNormals</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_1ani.htm">gluQuadricOrientation</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_3rol.htm">gluQuadricTexture</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_3k4l.htm">gluScaleImage</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_6rmt.htm">gluSphere</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_76eq.htm">gluTessBeginContour,  gluTessEndContour</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_4sa6.htm">gluTessBeginPolygon,  gluTessEndPolygon</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_9bu3.htm">gluTessCallback</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_5wks.htm">gluTessNormal</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_7gu1.htm">gluTessProperty</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_2p14.htm">gluTessVertex</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/glufnc01_3xv8.htm">gluUnProject</a></li>
+
+<!-- PORTING TO OPENGL -->
+<li class="toc-l1">	<a class="external reference" href="">Porting to OpenGL</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/oglport_2dx1.htm">Introduction to Porting to OpenGL for Windows NT and Windows 95</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/oglport_2c8j.htm">Porting X Window System Applications</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/oglport_3dvd.htm">Translating the GLX library</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/oglport_0jqr.htm">Porting Device Contexts and Pixel Formats</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_4ehx.htm">GLX Pixel Format Code Sample</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_29ut.htm">Win32 Pixel Format Code Sample</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/oglport_80z7.htm">Porting Rendering Contexts</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_676t.htm">GLX Rendering Context Code Sample</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_1obp.htm">Win32 Rendering Context Code Sample</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/oglport_286d.htm">Porting GLX Pixmap Code</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/oglport_0j8l.htm">Porting Other GLX Code</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/oglport_7qzp.htm">A Porting Sample</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_0b71.htm">An X Window System OpenGL Program</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_17jm.htm">The Program Ported to Win32</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/oglport_3164.htm">Porting Applications from IRIS GL</a></li>
+<li class="toc-l3">	<a class="external reference" href="good/pdgrmm/oglport_9xkj.htm">Special IRIS GL Porting Issues</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_0t6c.htm">Porting greset</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_1ier.htm">Porting IRIS GL &quot;Get&quot; Functions</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_7q9a.htm">Porting Code that Requires a Current Graphics Position</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_6b1v.htm">Porting Screen and Buffer Clearing Commands</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_0ktv.htm">Porting Matrix and Transformation Functions</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_2411.htm">Porting MSINGLE Mode Code</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_0ltf.htm">Porting Functions that Get Matrices and Transformations</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_601f.htm">Porting Viewports,  Screenmasks  and Scrboxes</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_4yer.htm">Porting Clipping Planes</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_3d6b.htm">Porting Drawing Functions</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_1zw9.htm">The IRIS GL Sphere Library</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_8i2b.htm">Porting v Functions</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_3wj7.htm">Porting bgn/end Commands</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_07hv.htm">Porting Points</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_2k6r.htm">Porting Lines</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_76yb.htm">Porting Polygons and Quadrilaterals</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_60j7.htm">Porting Triangles</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_58kz.htm">Porting Arcs and Circles</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_7mb7.htm">Porting Spheres</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_9j6t.htm">Porting Color,  Shading  and Writemask Code</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_7jzn.htm">Porting Color Calls</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_7z77.htm">Porting Shading Models</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_7o1f.htm">Porting Pixel Operations</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_2ar7.htm">Porting Depth Cueing and Fog Commands</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_8igj.htm">Porting Curve and Surface Functions</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_4l4j.htm">Porting NURBS Objects</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_2zar.htm">Porting NURBS Curves</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_03eb.htm">Porting Trimming Curves</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_3xv7.htm">Porting NURBS Surfaces</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_89yr.htm">Porting Antialiasing Functions</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_4s11.htm">Porting Blending Code</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_7kkz.htm">Porting afunction Test Functions</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_8lpv.htm">Using Antialiasing Functions</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_15yr.htm">Porting Accumulation Buffer Calls</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_9zeb.htm">Porting Stencil Plane Calls</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_9jar.htm">Porting Display Lists</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_3fse.htm">Porting the bbox2 Function</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_4jn7.htm">Porting Edited Display Lists</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_34fo.htm">A Sample Port of a Display List</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_775f.htm">Porting Defs,  Binds  and Sets</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_5i0j.htm">Porting Lighting and Materials Functions</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_80s3.htm">Porting Texture Functions</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_9hk6.htm">Translating tevdef</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_0q3q.htm">Translating texdef</a></li>
+<li class="toc-l5">	<a class="external reference" href="good/pdgrmm/oglport_0zla.htm">Translating texgen</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_25pv.htm">Porting Picking Functions</a></li>
+<li class="toc-l4">	<a class="external reference" href="good/pdgrmm/oglport_8m7n.htm">Porting Feedback Functions</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/appenda1_3soj.htm">OpenGL Functions and Their IRIS GL Equivalents</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/appenb_5wkz.htm">IRIS GL and OpenGL Differences</a></li>
+
+<!-- GLOSSARY -->
+<li class="toc-l1">	<a class="external reference" href="">Glossary</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4kgx.htm">A</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4kgy.htm">B</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4kgz.htm">C</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4kh0.htm">D</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4kh1.htm">E</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4kh2.htm">F</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4kh3.htm">G</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4kh4.htm">H</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4kh5.htm">I</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_2eln.htm">JK</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4kh8.htm">L</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4kh9.htm">M</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4kha.htm">N</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4khb.htm">O</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4khc.htm">P</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4khd.htm">Q</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4khe.htm">R</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4khf.htm">S</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4khg.htm">T</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4wqe.htm">U V</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_4khj.htm">W</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/glos_ogl_7gvu.htm">X Y Z</a></li>
+
+<!-- APPENDIX -->
+<li class="toc-l1">	<a class="external reference" href="">Appendix</a></li>
+<li class="toc-l2">	<a class="external reference" href="good/pdgrmm/aboutapx_0kz0.htm">About OpenGL</a></li>
+<!-- END CONTENTS -->
+
+</BODY>
