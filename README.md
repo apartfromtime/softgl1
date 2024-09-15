@@ -1,3 +1,3 @@
-# opengl1
+# softgl1
 
-opengl 1.0 reference manual from msvc++ 6.0 msdn library.
+software opengl 1.0 reference driver.
